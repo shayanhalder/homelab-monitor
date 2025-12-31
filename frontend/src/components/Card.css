@@ -1,0 +1,165 @@
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-large {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  color: white;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.stat-label-small {
+  font-size: 12px;
+  color: #666;
+}
+
+.stat-value-small {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
+}
+
+.disk-table,
+.network-table,
+.process-table {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table thead {
+  background: #f8f9fa;
+}
+
+table th {
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+  color: #667eea;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.cpu-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.cpu-badge.low {
+  background: #43e97b;
+  color: white;
+}
+
+.cpu-badge.medium {
+  background: #f093fb;
+  color: white;
+}
+
+.cpu-badge.high {
+  background: #ff6b6b;
+  color: white;
+}
+
+.command-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  table {
+    font-size: 11px;
+  }
+  
+  table th,
+  table td {
+    padding: 6px;
+  }
+}
+
