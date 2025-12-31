@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { SystemStats, CpuStats, MemoryStats, DiskIOStats, NetworkStats, ProcessInfo } from '../types';
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://homelab-monitor.shayanhalder.me';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
